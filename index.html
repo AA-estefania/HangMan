@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>HangMan Game</title>
+</head>
+<body>
+
+    <div class="cont">
+        <h1>HangMan</h1>
+        <div class="container">
+            <!-- Left Side: Word and Keyboard -->
+            <div class="left-side">
+                <div class="word-area">
+                    <h2 id="word-display"></h2>
+                </div>
+    
+                <div class="letter-buttons">
+                    <div id="alphabet-buttons"></div>
+                </div>
+    
+                <div class="hint-section">
+                    <button id="hint-button">Get Hint <i class="uil uil-lightbulb-alt"></i></button>
+                    <p id="hint-display"></p>
+                </div>
+            </div>
+    
+            <!-- Right Side: Hangman Image -->
+            <div class="right-side">
+                <div class="image-area">
+                    <img id="hangman-image" src="assets/images/hangman0.png" alt="Hangman" />
+                    <div id="guess-status">
+                        Incorrect guesses: <span id="incorrect-guesses" class="guess-count">0</span> / <span class="total-guesses">6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Win/Loss Message -->
+        <div id="result-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <div id="modal-gif-container">
+                    <img id="modal-gif" src="" >
+                </div>
+                <p id="result-message"></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- WORD LIST JS ----- -->
+    <script src="assets/js/wordlist.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

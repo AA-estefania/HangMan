@@ -1,0 +1,241 @@
+/* ----- POPPINS FONT Link ----- */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet');
+
+/* ----- VARIABLES ----- */
+:root{
+	--first-color: #f3e9e0;
+	--second-color: #cecbc4;
+	--third-color: #9fa8d1;
+	--fourth-color: #532667;
+	--fifth-color: #270d3d;
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+    font-family: 'Dosis';
+	font-weight: 600;
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cont{
+	background-color: var(--first-color);
+    flex-direction: row;
+    gap: 2rem;
+    width: 80vw;
+    max-width: 1200px;
+	padding: 50px;
+	border-radius: 50px;
+}
+.cont h1{
+	font-family: 'Dosis';
+	font-weight: 700;
+	font-size: 80px;
+	text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* Left side containing word and keyboard */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+	justify-content: center;
+
+}
+
+.word-area {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.letter-buttons {
+    margin-bottom: 1rem;
+}
+
+#alphabet-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+	
+}
+
+#alphabet-buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, var(--fourth-color), #64024c);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+	font-family: 'Dosis';
+	font-weight: 600;
+	font-size: 25px;
+}
+
+#alphabet-buttons button:hover {
+    background: var(--third-color);
+}
+
+#alphabet-buttons button.disabled {
+    background: var(--second-color);
+    color: var(--third-color);
+    cursor: not-allowed;
+}
+
+
+.hint-section {
+    margin-top: 1rem;
+}
+
+#hint-button {
+    padding: 0.4rem 1rem;
+    background-color: var(--fifth-color);
+	border: 2px solid var(--fifth-color);
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+	font-family: 'Dosis';
+	font-weight: 600;
+	font-size: 15px;
+}
+#hint-button:hover {
+    background-color: var(--first-color);
+	border: 2px solid var(--fifth-color);
+	color: var(--fifth-color);
+	
+}
+#hint-button i {
+	font-weight: 800;
+	font-size: 18px;
+}
+
+#hint-display {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--fourth-color);
+}
+
+/* Right side containing hangman image */
+.right-side {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: 5%;
+}
+
+.image-area img {
+    width: 100%;
+    height: auto;
+}
+
+.image-area h1{
+	font-family: 'Dosis';
+	font-weight: 700;
+	font-size: 50px;
+	text-align: center;
+}
+
+#guess-status {
+    font-size: 18px;
+    font-family: 'Dosis'; 
+	text-align: center;
+}
+
+#guess-status .guess-count {
+    color: #FF0000; /* Red color for incorrect guesses */
+    font-weight: bold;
+}
+
+#guess-status .total-guesses {
+    color: var(--fifth-color); /* Black color for the total number of guesses */
+    font-weight: normal;
+}
+
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--first-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Style for the modal GIF container */
+#modal-gif-container {
+    display: flex;
+    margin-bottom: 20px; /* Space between the GIF and the message */
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#modal-gif {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    display: block; /* Ensure GIF is displayed */
+	align-items: center;
+	justify-content: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#play-again {
+    padding: 0.5rem 1rem;
+    background-color: var(--fourth-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+	font-family: 'Dosis';
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#result-message {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+
+
+/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
+
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
