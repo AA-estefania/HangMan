@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
 }
 
@@ -28,7 +28,7 @@ body {
 	background-color: var(--first-color);
     flex-direction: row;
     gap: 2rem;
-    width: 80vw;
+    width: 70vw;
     max-width: 1200px;
 	padding: 50px;
 	border-radius: 50px;
